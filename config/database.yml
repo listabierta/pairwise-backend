@@ -17,3 +17,9 @@ test: &test
 cucumber:
   <<: *test
 
+production: 
+  <<: *default
+  database: pairwise_production
+  host: localhost
+  username: root
+  password: 
